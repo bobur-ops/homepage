@@ -8,14 +8,9 @@ const { title } = Astro.props;
 
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
 		<script
 			type="text/partytown"
-			src="https://www.googletagmanager.com/gtag/js?id=346993175"
+			src="https://www.googletagmanager.com/gtag/js?id=G-TY6KZBZ2YR"
 		></script>
 		<script type="text/partytown">
 			window.dataLayer = window.dataLayer || [];
@@ -23,8 +18,13 @@ const { title } = Astro.props;
 				dataLayer.push(arguments);
 			}
 			gtag('js', new Date());
-			gtag('config', '346993175');
+			gtag('config', 'G-TY6KZBZ2YR');
 		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
