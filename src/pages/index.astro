@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Price from '../components/Price.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<div class="about">
+			<div class="avatar">
+				<img src="/bobur.jpg" alt="" />
+			</div>
+			<div class="name">Bobur Komilov</div>
+			<div class="info">
+				Профессиональная разработка сайтов на конструкторе Tilda Publishing.
+				Выжимаем максимум из готовых блоков, чтобы оптимизировать бюджет, решаем
+				нестандартные задачи с помощью ZeroBlock и HTML-кода. Почувствуйте нашу
+				любовь!
+			</div>
+			<div class="sub-info">Can work with code</div>
+			<div class="button">
+				<button class="btn">Contact</button>
+			</div>
+		</div>
+		<div class="projects">
+			<Card
+				title="Cellar Door — IT HR-агентство"
+				about="Подберем IT-специалистов, сформируем команду на годы"
+				link="cellardoor.com.ru"
+				image="project1"
+				url="example.com"
+			/>
+			<Card
+				title="Elyon Digital"
+				about="We help people in emerging markets to dive into English speaking native environment by role-playing real-life stories with AI Robots. Praktika is the..."
+				link="praktika.ai"
+				image="project1"
+				url="example.com"
+			/>
+			<Card
+				title="Cellar Door — IT HR-агентство"
+				about="Подберем IT-специалистов, сформируем команду на годы"
+				link="cellardoor.com.ru"
+				image="project1"
+				url="example.com"
+			/>
+			<Card
+				title="Elyon Digital"
+				about="We help people in emerging markets to dive into English speaking native environment by role-playing real-life stories with AI Robots. Praktika is the..."
+				link="praktika.ai"
+				image="project1"
+				url="example.com"
+			/>
+			<Card
+				title="Elyon Digital"
+				about="We help people in emerging markets to dive into English speaking native environment by role-playing real-life stories with AI Robots. Praktika is the..."
+				link="praktika.ai"
+				image="project1"
+				url="example.com"
+			/>
+		</div>
+		<div class="price">
+			<div class="price-title">Types and prices of services</div>
+			<Price
+				description="Лендинг. Создание дизайна и контента страницы, которая призывает пользователя к действию. Например, подписаться на рассылку, купить билет на конференцию, запросить смету или просто скачать презентацию."
+				price="300"
+				title="Одностраничный сайт"
+			/>
+			<Price
+				description="Многостраничный сайт. Создание сайта с более сложной структурой: несколькими страницами, которые объединены меню или другими блоками с ссылками."
+				price="600"
+				title="Многостраничный сайт"
+			/>
+			<Price
+				description="Интернет-магазин. Создание сайта для продажи товаров с платежной системой, корзиной и уведомлением продавца и покупателя о заказе."
+				price="1000"
+				title="Интернет магазин"
+			/>
+		</div>
+		<div class="contact">
+			<div class="contact-title">Свяжитесь с нами</div>
+			<div class="input-field">
+				<div class="input-label">Имя</div>
+				<input type="text" class="input" />
+			</div>
+			<div class="input-field">
+				<div class="input-label">Email</div>
+				<input type="text" class="input" />
+			</div>
+			<div class="input-field">
+				<div class="input-label">Расскажите о своей задаче</div>
+				<textarea class="textarea"></textarea>
+			</div>
+			<div class="contact-send">
+				<button>Отправить</button>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1116px;
+		padding-bottom: 50px;
+	}
+	.about {
+		padding-top: 50px;
+		margin-bottom: 90px;
+	}
+	.avatar {
+		width: 120px;
+		height: 120px;
+		border-radius: 100%;
+		margin: 0 auto 30px;
+		overflow: hidden;
+	}
+	.avatar img {
+		object-fit: cover;
+		object-position: center;
+		width: 120px;
+		height: 120px;
+	}
+	.name {
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 30px;
+		font-size: 27px;
+	}
+	.info {
+		text-align: center;
+		max-width: 573px;
+		line-height: 28px;
+		margin: 0 auto 50px;
+	}
+	.sub-info {
+		text-align: center;
+		margin-bottom: 80px;
+	}
+	.btn {
+		padding: 18px 85px;
+		border-radius: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		outline: none;
+		border: none;
+		background: #f06847;
+		margin: 0 auto;
+		cursor: pointer;
+		color: white;
+	}
+	.projects {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+		margin-bottom: 180px;
+		padding: 0 20px;
+	}
+	.price {
+		margin-bottom: 180px;
+	}
+	.price-title {
+		text-align: center;
+		font-size: 26px;
+		margin-bottom: 80px;
+	}
+	.contact-title {
+		text-align: center;
+		margin-bottom: 80px;
+		font-weight: 500;
+		font-size: 22px;
+	}
+	.input-field {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 560px;
+		margin-bottom: 22px;
+	}
+	.input-label {
+		margin-bottom: 8px;
+		font-weight: 300;
+	}
+	.input {
+		padding: 20px 25px;
+		width: 100%;
+		font-size: 16px;
+		outline: none;
+		font-weight: 300;
+	}
+	.input:focus {
+		border: 1px solid blue;
+	}
+	.textarea {
+		padding: 20px 25px;
+		width: 100%;
+		font-size: 16px;
+		outline: none;
+		font-weight: 300;
+		min-height: 152px;
+	}
+	.textare:focus {
+		border: 1px solid blue;
+	}
+	.contact-send {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.contact-send button {
+		background: #000000;
+		padding: 19px 57px 20px 57px;
+		color: white;
+		cursor: pointer;
+	}
+	@media screen and (max-width: 900px) {
+		.projects {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media screen and (max-width: 640px) {
+		.projects {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+</style>

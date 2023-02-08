@@ -1,0 +1,45 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	price: string;
+}
+
+const { description, price, title } = Astro.props;
+---
+
+<div class="price-item">
+	<div class="price-item__title">
+		{title}
+	</div>
+	<div class="price-item__description">
+		{description}
+	</div>
+	<div class="price-item__price">
+		{price}$
+	</div>
+</div>
+
+<style>
+	.price-item {
+		display: flex;
+		gap: 145px;
+		padding: 32px 0;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	.price-item__title {
+		font-weight: 500;
+		font-size: 23px;
+		max-width: 132px;
+	}
+	.price-item__description {
+		font-weight: 300;
+		color: rgba(0, 0, 0, 0.6);
+		flex: 1;
+		line-height: 31px;
+	}
+	.price-item__price {
+		font-weight: 500;
+		font-size: 22px;
+	}
+</style>

@@ -1,0 +1,62 @@
+---
+interface Props {
+	url: string;
+	image: string;
+	title: string;
+	about: string;
+	link: string;
+}
+
+const { about, image, link, title, url } = Astro.props;
+---
+
+<div class="card">
+	<div class="card-img">
+		<img src={`/${image}.png`} alt="thumbnail" />
+	</div>
+	<div class="card-info">
+		<div class="card-info__title">{title}</div>
+		<div class="card-info__about">{about}</div>
+		<div class="card-info__link">{link}</div>
+	</div>
+</div>
+
+<style>
+	.card {
+		height: 387px;
+		overflow: hidden;
+		border-radius: 8px;
+		background: #ffffff;
+		transition: 0.3s ease-in-out;
+		cursor: pointer;
+	}
+	.card:hover {
+		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+	}
+	.card-img img {
+		width: 100%;
+		height: 185px;
+		object-fit: cover;
+		object-position: center;
+	}
+	.card-info {
+		margin-top: 20px;
+		padding-left: 24px;
+	}
+	.card-info__title {
+		margin-bottom: 7px;
+		font-weight: 500;
+	}
+	.card-info__about {
+		max-width: 308px;
+		font-weight: 300;
+		font-size: 12px;
+		color: rgba(51, 51, 51, 0.5);
+		margin-bottom: 15px;
+	}
+	.card-info__link {
+		color: #999999;
+		font-size: 13px;
+		font-weight: 100;
+	}
+</style>
