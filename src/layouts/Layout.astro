@@ -6,7 +6,6 @@ export interface Props {
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -14,6 +13,18 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script
+			type="text/partytown"
+			src="https://www.googletagmanager.com/gtag/js?id=346993175"
+		></script>
+		<script type="text/partytown">
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', '346993175');
+		</script>
 	</head>
 	<body>
 		<slot />
