@@ -10,16 +10,16 @@ interface Props {
 const { about, image, link, title, url } = Astro.props;
 ---
 
-<div class="card">
+<a href={url} target="_blank" class="card">
 	<div class="card-img">
-		<img src={`/${image}.png`} alt="thumbnail" />
+		<img src={`/works/${image}.png`} alt="thumbnail" />
 	</div>
 	<div class="card-info">
 		<div class="card-info__title">{title}</div>
 		<div class="card-info__about">{about}</div>
 		<div class="card-info__link">{link}</div>
 	</div>
-</div>
+</a>
 
 <style>
 	.card {
@@ -29,6 +29,8 @@ const { about, image, link, title, url } = Astro.props;
 		background: #ffffff;
 		transition: 0.3s ease-in-out;
 		cursor: pointer;
+		text-decoration: none;
+		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 	}
 	.card:hover {
 		box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);

@@ -12,55 +12,52 @@ import Price from '../components/Price.astro';
 			</div>
 			<div class="name">Bobur Komilov</div>
 			<div class="info">
-				Профессиональная разработка сайтов на конструкторе Tilda Publishing.
-				Выжимаем максимум из готовых блоков, чтобы оптимизировать бюджет, решаем
-				нестандартные задачи с помощью ZeroBlock и HTML-кода. Почувствуйте нашу
-				любовь!
+				Профессиональная разработка сайтов. Помогаю бизнесу выделиться и
+				зарабатывать с помощью крутых сайтов и топового веб-дизайна.
 			</div>
-			<div class="sub-info">Can work with code</div>
 			<div class="button">
-				<button class="btn">Contact</button>
+				<button class="btn">Связаться</button>
 			</div>
 		</div>
 		<div class="projects">
 			<Card
-				title="Cellar Door — IT HR-агентство"
-				about="Подберем IT-специалистов, сформируем команду на годы"
-				link="cellardoor.com.ru"
-				image="project1"
-				url="example.com"
+				title="Realtor Estate"
+				about="Rental Homes for Everyone Explore Apartments, Villa, Homes and more"
+				link="https://realtor-estate.vercel.app"
+				image="estate-1"
+				url="https://realtor-estate.vercel.app"
 			/>
 			<Card
-				title="Elyon Digital"
-				about="We help people in emerging markets to dive into English speaking native environment by role-playing real-life stories with AI Robots. Praktika is the..."
-				link="praktika.ai"
-				image="project1"
-				url="example.com"
+				title="Shareme"
+				about="Share with your photos with thousands of people"
+				link="https://share-me-react.netlify.app/login"
+				image="shareme_1"
+				url="https://share-me-react.netlify.app/login"
 			/>
 			<Card
-				title="Cellar Door — IT HR-агентство"
-				about="Подберем IT-специалистов, сформируем команду на годы"
-				link="cellardoor.com.ru"
-				image="project1"
-				url="example.com"
+				title="Kryptomastery"
+				about="Explore the crpto world. Buy and sell cryptocurrencies easily on Krypto"
+				link="https://kryptomastery.vercel.app/"
+				image="krypt_1"
+				url="https://kryptomastery.vercel.app/"
 			/>
 			<Card
-				title="Elyon Digital"
-				about="We help people in emerging markets to dive into English speaking native environment by role-playing real-life stories with AI Robots. Praktika is the..."
-				link="praktika.ai"
-				image="project1"
-				url="example.com"
+				title="Gericht Restaurant"
+				about="Sit Tellus Lobortis Sed Senectus Vivamus Molestie. Condimentum Volutpat Morbi Facilisis Quam Scelerisque Sapien. Et, Penatibus Aliquam Amet Tellus"
+				link="https://gerichtrestaurant-app.netlify.app"
+				image="rest1"
+				url="https://gerichtrestaurant-app.netlify.app"
 			/>
 			<Card
-				title="Elyon Digital"
-				about="We help people in emerging markets to dive into English speaking native environment by role-playing real-life stories with AI Robots. Praktika is the..."
-				link="praktika.ai"
-				image="project1"
-				url="example.com"
+				title="Вездеход"
+				about="Выберем и подберем для вас любой внедорожник в кратчайшие сроки с учетом всех пожеланий и всех необходимых потребностей"
+				link="https://bobur-ops.github.io/Slider.github.io/"
+				image="slider"
+				url="https://bobur-ops.github.io/Slider.github.io/"
 			/>
 		</div>
 		<div class="price">
-			<div class="price-title">Types and prices of services</div>
+			<div class="price-title">Виды и стоимость услуг</div>
 			<Price
 				description="Лендинг. Создание дизайна и контента страницы, которая призывает пользователя к действию. Например, подписаться на рассылку, купить билет на конференцию, запросить смету или просто скачать презентацию."
 				price="300"
@@ -79,20 +76,20 @@ import Price from '../components/Price.astro';
 		</div>
 		<div class="contact">
 			<div class="contact-title">Свяжитесь с нами</div>
-			<div class="input-field">
-				<div class="input-label">Имя</div>
-				<input type="text" class="input" />
-			</div>
-			<div class="input-field">
-				<div class="input-label">Email</div>
-				<input type="text" class="input" />
-			</div>
-			<div class="input-field">
-				<div class="input-label">Расскажите о своей задаче</div>
-				<textarea class="textarea"></textarea>
-			</div>
-			<div class="contact-send">
-				<button>Отправить</button>
+			<div class="socials">
+				<a href="https://t.me/k_bobur_m" target="_blank" class="social">
+					<img src="/telegram.svg" alt="" />
+				</a>
+				<a
+					href="https://www.instagram.com/http.bobur/"
+					target="_blank"
+					class="social"
+				>
+					<img src="/instagram.svg" alt="" />
+				</a>
+				<a href="mailto:boburkomilovv@gmail.com" target="_blank" class="social">
+					<img src="/mail.svg" alt="" />
+				</a>
 			</div>
 		</div>
 	</main>
@@ -172,7 +169,7 @@ import Price from '../components/Price.astro';
 	}
 	.contact-title {
 		text-align: center;
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		font-weight: 500;
 		font-size: 22px;
 	}
@@ -216,6 +213,15 @@ import Price from '../components/Price.astro';
 		background: #000000;
 		padding: 19px 57px 20px 57px;
 		color: white;
+		cursor: pointer;
+	}
+
+	.socials {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+	.social {
 		cursor: pointer;
 	}
 	@media screen and (max-width: 900px) {
