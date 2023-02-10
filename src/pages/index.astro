@@ -16,42 +16,42 @@ import Price from '../components/Price.astro';
 				зарабатывать с помощью крутых сайтов и топового веб-дизайна.
 			</div>
 			<div class="button">
-				<button class="btn">Связаться</button>
+				<a href="#contacts" class="btn">Связаться</a>
 			</div>
 		</div>
 		<div class="projects">
 			<Card
 				title="Realtor Estate"
 				about="Rental Homes for Everyone Explore Apartments, Villa, Homes and more"
-				link="https://realtor-estate.vercel.app"
+				link="realtor-estate.vercel.app"
 				image="estate-1"
 				url="https://realtor-estate.vercel.app"
 			/>
 			<Card
 				title="Shareme"
 				about="Share with your photos with thousands of people"
-				link="https://share-me-react.netlify.app/login"
+				link="share-me-react.netlify.app/login"
 				image="shareme_1"
 				url="https://share-me-react.netlify.app/login"
 			/>
 			<Card
 				title="Kryptomastery"
 				about="Explore the crpto world. Buy and sell cryptocurrencies easily on Krypto"
-				link="https://kryptomastery.vercel.app/"
+				link="kryptomastery.vercel.app/"
 				image="krypt_1"
 				url="https://kryptomastery.vercel.app/"
 			/>
 			<Card
 				title="Gericht Restaurant"
 				about="Sit Tellus Lobortis Sed Senectus Vivamus Molestie. Condimentum Volutpat Morbi Facilisis Quam Scelerisque Sapien. Et, Penatibus Aliquam Amet Tellus"
-				link="https://gerichtrestaurant-app.netlify.app"
+				link="gerichtrestaurant-app.netlify.app"
 				image="rest1"
 				url="https://gerichtrestaurant-app.netlify.app"
 			/>
 			<Card
 				title="Вездеход"
 				about="Выберем и подберем для вас любой внедорожник в кратчайшие сроки с учетом всех пожеланий и всех необходимых потребностей"
-				link="https://bobur-ops.github.io/Slider.github.io/"
+				link="bobur-ops.github.io/Slider.github.io/"
 				image="slider"
 				url="https://bobur-ops.github.io/Slider.github.io/"
 			/>
@@ -74,7 +74,7 @@ import Price from '../components/Price.astro';
 				title="Интернет магазин"
 			/>
 		</div>
-		<div class="contact">
+		<div id="contacts" class="contact">
 			<div class="contact-title">Свяжитесь с нами</div>
 			<div class="socials">
 				<a href="https://t.me/k_bobur_m" target="_blank" class="social">
@@ -136,7 +136,7 @@ import Price from '../components/Price.astro';
 		margin-bottom: 80px;
 	}
 	.btn {
-		padding: 18px 85px;
+		padding: 18px 80px;
 		border-radius: 30px;
 		display: flex;
 		align-items: center;
@@ -147,6 +147,9 @@ import Price from '../components/Price.astro';
 		margin: 0 auto;
 		cursor: pointer;
 		color: white;
+		width: fit-content;
+		text-decoration: none;
+		font-size: 18px;
 	}
 	.projects {
 		display: grid;
